@@ -9,7 +9,6 @@ def is_valid(s)
   s.chars.each do |b|
       if b == "(" || b == "{" || b == "["
           first.push(b)
-          s.chars.shift
       elsif b == ")"
           return false if first[-1] != "("
           first.pop
@@ -25,3 +24,4 @@ def is_valid(s)
 
 end
 
+# ((
