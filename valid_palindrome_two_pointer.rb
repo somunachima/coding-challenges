@@ -1,7 +1,7 @@
 # @param {String} s
 # @return {Boolean}
 def is_palindrome(s)
-  s = s.downcase.tr("^a-z0-9", "")
+  s = s.downcase.delete("^a-z0-9")
   # s = s.downcase
   left = 0
   right = s.length - 1
