@@ -9,6 +9,8 @@ def LetterChanges(str)
   return new
 end
 
+
+
 # old version (March 2023)
 def LetterChanges(str)
 
