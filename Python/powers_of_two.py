@@ -8,7 +8,6 @@ def isPowerOfTwo(n):
 
     return True
 
-# Driver code
 if(isPowerOfTwo(31)):
     print('Yes')
 else:
