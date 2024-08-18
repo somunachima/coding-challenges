@@ -1,4 +1,4 @@
-package ChapterFour;
+package SectionSix;
 
 public class PrintMultiplication {
     public static void printMultiplication() {

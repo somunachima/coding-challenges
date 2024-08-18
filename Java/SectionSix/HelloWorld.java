@@ -1,4 +1,4 @@
-package ChapterFour;
+package SectionSix;
 
 public class HelloWorld {
     public static void main(String[] args) {
