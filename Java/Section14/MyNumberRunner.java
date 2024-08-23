@@ -2,7 +2,7 @@ package Section14;
 
 public class MyNumberRunner {
     public static void main(String[] args) {
-        MyNumber number = new MyNumber(6);
+        MyNumber number = new MyNumber(9);
         System.out.println(number.isPrime());
         int sum = number.sumUpToN();
         System.out.println(sum);

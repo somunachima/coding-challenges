@@ -8,15 +8,16 @@ public class MyNumber {
     }
 
     public boolean isPrime() {
+        if (number < 2) return false;
         for (int i = 2; i < number; i++) {
-            return number % i == 0;
+            if (number % i == 0) return false;
         }
-        return false;
+        return true;
     }
 
     public int sumUpToN() {
         int sum = 0;
-        for (int i = 0; i < number; i++) {
+        for (int i = 0; i <= number; i++) {
             sum += i;
         }
         return sum;
@@ -24,7 +25,7 @@ public class MyNumber {
 
     public int sumOfDivisors() {
         int sum = 0;
-        for (int i = 1; i < number; i++) {
+        for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 sum += i;
             }
@@ -33,7 +34,7 @@ public class MyNumber {
     }
 
     public void printANumberTriangle() {
-        StringBuilder res = new StringBuilder(" ");
+        StringBuilder res = new StringBuilder("");
         for (int i = 1; i <= number; i++) {
             System.out.println(res.append(i).append(" "));
         }
